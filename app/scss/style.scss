@@ -3,5 +3,96 @@
 @import "fonts";
 @import "global";
 
+.header{
+  height: 110px;
+  background-color: $bg;
+}
+.header__inner{
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header{
+  &__logo{
+    opacity: .7;
+    transition: all .5s;
+  }
+  &__menu{
+    li{
+      display: inline-block;   
+      opacity: .7;
+      transition: all .5s;
+    }
+    li + li{
+      margin-left: 35px;
+    }
+  }
+  &__contacts{
+    a{
+      display: block;
+      margin: 10px 0;
+      opacity: .7;
+      padding-left: 25px;
+      transition: all .5s;
+      position: relative;
+    }
+  }
+  &__btn{
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: $btn;
+    opacity: 0.7;
+    transition: all .5s;
+  }
+}
+.header__logo:hover{
+  opacity: 1;
+}
+.header__menu li{
+  position: relative;
+  &:hover{
+    opacity: 1;
+    &::before{
+      transform: scale(1);
+    }
+  }
+  &::before{
+    content: '';
+    width: 85%;
+    height: 3px;
+    background-color: $btn;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 25px;
+    transform: scale(0);
+    transition: all .5s;
+  }
+}
+.header__contacts a{
+  &:hover{
+    opacity: 1;
+    &::before{
+      color: $btn;
+      transform: rotateZ(15deg);
+    }
+  }
+  &::before{
+    content: '\f095';
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    transition: all .5s;
+    transform: rotateZ(135deg);
+  }
+}
+.header__btn:hover{
+  opacity: 1;
+  box-shadow: 4px 4px 15px rgba(245,44,84,1);
+}
+
 
 @import "media";

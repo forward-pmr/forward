@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro.woff2') format('woff2'),
+       url('../fonts/GothamPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro Light';
+  src: url('../fonts/GothamPro-Light.woff2') format('woff2'),
+       url('../fonts/GothamPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+       url('../fonts/GothamPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?fy43o1');
+  src:  url('../fonts/icomoon.eot?fy43o1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fy43o1') format('truetype'),
+    url('../fonts/icomoon.woff?fy43o1') format('woff'),
+    url('../fonts/icomoon.svg?fy43o1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\f095";
+}
+
+
+

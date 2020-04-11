@@ -4,8 +4,9 @@
 @import "global";
 
 .header{
-  height: 110px;
+  z-index: 1;
   background-color: $bg;
+  position: relative;
 }
 .header__inner{
   height: 110px;
@@ -54,12 +55,12 @@
   &:hover{
     opacity: 1;
     &::before{
-      transform: scale(1);
+      width: 85%;
     }
   }
   &::before{
     content: '';
-    width: 85%;
+    width: 0%;
     height: 3px;
     background-color: $btn;
     position: absolute;
@@ -68,7 +69,6 @@
     right: 0;
     margin: 0 auto;
     border-radius: 25px;
-    transform: scale(0);
     transition: all .5s;
   }
 }
@@ -94,5 +94,86 @@
   box-shadow: 4px 4px 15px rgba(245,44,84,1);
 }
 
+// end header
+//  start particles
+
+#particles-black{
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+}
+
+// end particles
+// start main
+
+.main{
+  padding: 250px 0;
+}
+.main__inner{
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+.main__title{
+  font-size: 40px;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  margin-bottom: 50px;
+}
+.main__btn{
+  a{
+    margin: 0 40px;
+    font-size: 18px;
+  }
+  &-home{
+    padding-left: 35px;
+    position: relative;
+    transition: all .5s;
+    &::before{
+      content: '\e9b6';
+      font-family: 'icomoon';
+      position: absolute;
+      left: -15px;
+      top: -8px;
+      font-size: 30px;
+      transition: all .5s;
+    }
+    &:hover{
+      color: $btn;
+      &::before{
+        color: #fff;
+        transform: rotateZ(90deg);
+      }
+    }
+  }
+  &-works{
+    border: 1px solid white;
+    padding: 10px 55px 10px 25px;
+    border-radius: 25px;
+    position: relative;
+    transition: all .5s;
+    &::after{
+      content: '\e968';
+      font-family: 'icomoon';
+      position: absolute;
+      right: 20px;
+      transition: all .5s;
+    }
+  }
+}
+.main__btn-works:hover{
+  border: 1px solid black;
+  background-color: #fff;
+  color: #000;
+  &::after{
+    transform: rotateX(180deg);
+    color: #000;
+  }
+}
+
+// end main
 
 @import "media";

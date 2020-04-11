@@ -23,11 +23,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?fy43o1');
-  src:  url('../fonts/icomoon.eot?fy43o1#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?fy43o1') format('truetype'),
-    url('../fonts/icomoon.woff?fy43o1') format('woff'),
-    url('../fonts/icomoon.svg?fy43o1#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?3gfxx3');
+  src:  url('../fonts/icomoon.eot?3gfxx3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3gfxx3') format('truetype'),
+    url('../fonts/icomoon.woff?3gfxx3') format('woff'),
+    url('../fonts/icomoon.svg?3gfxx3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -51,6 +51,11 @@
 .icon-phone:before {
   content: "\f095";
 }
-
+.icon-redo2:before {
+  content: "\e968";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
 
 
